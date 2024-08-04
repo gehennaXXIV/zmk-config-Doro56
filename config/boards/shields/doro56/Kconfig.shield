@@ -1,0 +1,5 @@
+config SHIELD_DORO56_LEFT
+    def_bool $(shields_list_contains,doro56_left)
+
+config SHIELD_DORO56_RIGHT
+    def_bool $(shields_list_contains,doro56_right)
