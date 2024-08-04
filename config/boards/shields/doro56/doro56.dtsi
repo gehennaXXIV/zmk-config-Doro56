@@ -35,3 +35,19 @@ RC(4,0)                 RC(4,3)         RC(4,5) RC(4,6) RC(4,7) RC(4,8)         
 
     };
 };
+
+left_encoder: encoder_left {
+    a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+};
+
+right_encoder: encoder_right {
+    a-gpios = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+};
+
+sensors: sensors {
+    compatible = "zmk,keymap-sensors";
+    sensors = <&left_encoder &right_encoder>;
+    triggers-per-rotation = <20>;
+};
