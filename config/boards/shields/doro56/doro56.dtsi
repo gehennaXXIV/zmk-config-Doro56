@@ -20,7 +20,7 @@ RC(4,0)                 RC(4,3)         RC(4,5) RC(4,6) RC(4,7) RC(4,8)         
         >;
     };
 
-    kscan0: kscan {
+    kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
