@@ -1,10 +1,10 @@
 #include "doro56.dtsi"
 
-&default_transform { // The matrix transform for this board is 7 columns over because the left half is 6 columns wide according to the matrix.
+&transform { // The matrix transform for this board is 7 columns over because the left half is 6 columns wide according to the matrix.
     col-offset = <7>;
 };
 
-&kscan0 {
+&kscan {
     col-gpios
         = <&pro_micro 4 GPIO_ACTIVE_HIGH>  // col7 in the schematic
         , <&pro_micro 10 GPIO_ACTIVE_HIGH> // col6 in the schematic

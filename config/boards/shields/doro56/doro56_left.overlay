@@ -1,6 +1,6 @@
 #include "doro56.dtsi" // Notice that the main dtsi files are included in the overlay.
 
-&kscan0 {
+&kscan {
     col-gpios
         = <&pro_micro 19 GPIO_ACTIVE_HIGH> // col1 in the schematic
         , <&pro_micro 18 GPIO_ACTIVE_HIGH> // col2 in the schematic
