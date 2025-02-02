@@ -9,7 +9,7 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp C>;
             label = "SG";
-            tap-ms = <8>;
+            tap-ms = <9>;
         };
     };
 
