@@ -4,7 +4,6 @@
 / {
     chosen {
         zmk,physical-layout = &layout_0;
-        zmk, battery;
     };
 
     transform: keymap_transform {
